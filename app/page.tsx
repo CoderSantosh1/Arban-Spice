@@ -1,69 +1,67 @@
 import Image from "next/image";
+import Link from "next/link";
+import { ArrowRight } from "@/components/Icons";
+import { AboutIntro, BlogSection, ChefsSection, GallerySection, MenuCategories, TestimonialsSection } from "@/components/Sections";
+
+function Hero() {
+  return (
+    <section className="relative isolate flex min-h-[520px] items-center overflow-hidden bg-navy sm:min-h-[560px] lg:h-[calc(100svh-126px)] lg:max-h-[720px]">
+      <Image src="/home/hero.png" alt="" fill priority sizes="100vw" className="-z-20 animate-kenburns object-cover object-[70%_center]" />
+      <div className="absolute inset-0 -z-10 " />
+      <div className="absolute inset-0 -z-10" />
+
+      {/* floating warm glows */}
+      <span aria-hidden className="absolute top-[18%] right-[30%] -z-10 h-24 w-24 animate-float rounded-full bg-gold/30 blur-2xl" />
+      <span aria-hidden className="absolute right-[12%] bottom-[22%] -z-10 h-32 w-32 animate-float rounded-full bg-gold/20 blur-3xl [animation-delay:-3s]" />
+
+      <div className="container-x py-20">
+        <div className="hero-in max-w-[720px] text-white">
+          <p className="flex items-center gap-4 text-[13px] font-medium tracking-[0.25em] text-gold-2 uppercase">
+            <span className="h-px w-10 bg-gold-2" /> <span className="whitespace-nowrap">Welcome to ArbanSpice</span>
+            <span className="hidden h-px w-10 bg-gold-2 sm:block" />
+          </p>
+          <h1 className="mt-5 font-serif text-[44px] leading-[1.08] font-medium sm:text-[64px]">
+            Good Food
+            <br />
+            <span className="text-gold-2">Brings People</span> Together
+          </h1>
+          {/* <p className="mt-6 max-w-[500px] text-[17px] leading-relaxed text-white/90">
+            A perfect blend of authentic flavours, fresh ingredients and warm hospitality. Experience unforgettable dining moments at ArbanSpice.
+          </p> */}
+          <div className="mt-9 flex flex-wrap gap-4">
+            <Link href="/menu" className="btn-gold">
+              Explore Menu <ArrowRight className="h-5 w-5" />
+            </Link>
+            <Link href="/book-table" className="btn-outline light">
+              Book a Table
+            </Link>
+          </div>
+        </div>
+      </div>
+
+      <a
+        href="#about"
+        aria-label="Scroll down"
+        className="absolute bottom-6 left-1/2 hidden h-11 w-7 -translate-x-1/2 justify-center rounded-full border-2 border-white/60 pt-2 sm:flex"
+      >
+        <span className="h-2 w-1 rounded-full bg-gold-2" style={{ animation: "scrollDot 1.6s ease-in-out infinite" }} />
+      </a>
+    </section>
+  );
+}
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert h-5 w-[100px]"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the{" "}
-            <code className="rounded bg-black/[.06] px-1.5 py-0.5 font-mono text-[0.9em] dark:bg-white/[.08]">
-              page.tsx
-            </code>{" "}
-            file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert h-[14px] w-4"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={14}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
+    <>
+      <Hero />
+      <div id="about" className="scroll-mt-20">
+        <AboutIntro />
+      </div>
+      <MenuCategories />
+      <ChefsSection />
+      <GallerySection />
+      <TestimonialsSection />
+      <BlogSection />
+    </>
   );
 }
