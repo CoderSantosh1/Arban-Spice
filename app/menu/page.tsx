@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import { LeafBranch } from "@/components/Decor";
-import { Bowl, Cake, Cloche, Fish, ForkKnife, Leaf, Plate } from "@/components/Icons";
-import Reveal from "@/components/Reveal";
-import SectionHeading from "@/components/SectionHeading";
-import { PageBanner } from "@/components/Sections";
+import { LeafBranch } from "@/components/shared/Decor";
+import { Bowl, Cake, Cloche, Fish, ForkKnife, Leaf, Plate } from "@/components/shared/Icons";
+import Reveal from "@/components/shared/Reveal";
+import SectionHeading from "@/components/shared/SectionHeading";
+import { PageBanner } from "@/components/shared/PageBanner";
 import { desserts, mainMenu, seafood, specials, type Dish } from "@/lib/data";
 
 export const metadata: Metadata = { title: "Our Menu" };

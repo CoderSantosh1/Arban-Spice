@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import { ArrowUp } from "./Icons";
+import { ArrowUp } from "@/components/shared/Icons";
 
 /** Brief branded curtain on first load; slides up via CSS. */
 export function Preloader() {

@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { Great_Vibes, Marcellus, Outfit, Playfair_Display } from "next/font/google";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
-import { Preloader, ScrollExtras } from "@/components/Chrome";
+import Header from "@/components/layout/Header";
+import Footer from "@/components/layout/Footer";
+import { Preloader, ScrollExtras } from "@/components/layout/Chrome";
 import "./globals.css";
 
 const playfair = Playfair_Display({ variable: "--font-playfair", subsets: ["latin"], weight: ["400", "500", "600", "700"] });

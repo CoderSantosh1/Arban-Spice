@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import { LeafBranch } from "@/components/Decor";
-import { BookingForm } from "@/components/Forms";
-import { Moon, Sun } from "@/components/Icons";
-import Reveal from "@/components/Reveal";
-import SectionHeading from "@/components/SectionHeading";
-import { PageBanner } from "@/components/Sections";
+import { LeafBranch } from "@/components/shared/Decor";
+import { BookingForm } from "@/components/shared/Forms";
+import { Moon, Sun } from "@/components/shared/Icons";
+import Reveal from "@/components/shared/Reveal";
+import SectionHeading from "@/components/shared/SectionHeading";
+import { PageBanner } from "@/components/shared/PageBanner";
 
 export const metadata: Metadata = { title: "Book a Table" };
 
@@ -15,7 +15,7 @@ export default function BookTablePage() {
       <PageBanner title="Book a Table" />
 
       <section className="relative overflow-hidden">
-        <div className="grid lg:grid-cols-[521fr_828fr]">
+        <div className="grid lg:grid-cols-[521fr_828fr]  py-10">
           <Reveal variant="clip" className="relative min-h-[320px] overflow-hidden lg:min-h-0">
             <Image src="/book-table/dining.jpg" alt="Candle-lit dining table" fill sizes="(min-width:1024px) 40vw, 100vw" className="animate-kenburns object-cover" />
           </Reveal>

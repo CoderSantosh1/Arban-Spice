@@ -5,7 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { nav, site } from "@/lib/data";
-import { ChevronDown, Clock, Close, Facebook, Instagram, MapPin, Menu, Phone, Twitter, Youtube } from "./Icons";
+import { ChevronDown, Clock, Close, Facebook, Instagram, MapPin, Menu, Phone, Twitter, Youtube } from "@/components/shared/Icons";
 
 const socials = [
   { Icon: Facebook, label: "Facebook" },

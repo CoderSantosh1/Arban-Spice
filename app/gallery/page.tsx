@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import { LeafBranch, Script } from "@/components/Decor";
-import GalleryGrid from "@/components/GalleryGrid";
-import SectionHeading from "@/components/SectionHeading";
-import { PageBanner } from "@/components/Sections";
+import { LeafBranch, Script } from "@/components/shared/Decor";
+import GalleryGrid from "@/components/shared/GalleryGrid";
+import SectionHeading from "@/components/shared/SectionHeading";
+import { PageBanner } from "@/components/shared/PageBanner";
 
 export const metadata: Metadata = { title: "Gallery" };
 

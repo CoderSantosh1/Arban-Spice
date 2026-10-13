@@ -1,11 +1,11 @@
 export const site = {
   name: "ArbanSpice",
-  address: "123 Food Street, New Delhi, India",
-  fullAddress: ["123 Food Street, Connaught Place", "New Delhi, India - 110001"],
-  phone: "+91 98765 43210",
-  phone2: "+91 98765 43211",
-  email: "info@arbanspice.com",
-  email2: "support@arbanspice.com",
+  address: "1234 Main Street, Suite 100, Springfield, IL 62701, USA",
+  fullAddress: ["1234 Main Street, Suite 100, Springfield, IL 62701, USA"],
+  phone: "+1 00000000",
+  phone2: "+1 00000001",
+  email: "info@xyz.com",
+  email2: "info@xyz.com",
   hours: "Mon - Sun: 9:00 AM - 11:00 PM",
 };
 

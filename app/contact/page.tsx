@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import { LeafBranch } from "@/components/Decor";
-import { ContactForm } from "@/components/Forms";
-import { Facebook, Instagram, Mail, MapPinLine, PhoneLine, Pinterest, XLogo, Youtube } from "@/components/Icons";
-import Reveal from "@/components/Reveal";
-import { PageBanner } from "@/components/Sections";
+import { LeafBranch } from "@/components/shared/Decor";
+import { ContactForm } from "@/components/shared/Forms";
+import { Facebook, Instagram, Mail, MapPinLine, PhoneLine, Pinterest, XLogo, Youtube } from "@/components/shared/Icons";
+import Reveal from "@/components/shared/Reveal";
+import { PageBanner } from "@/components/shared/PageBanner";
 import { site } from "@/lib/data";
 
 export const metadata: Metadata = { title: "Contact Us" };

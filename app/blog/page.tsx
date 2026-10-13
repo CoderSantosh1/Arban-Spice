@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
-import { LeafBranch, Script } from "@/components/Decor";
-import Pagination from "@/components/Pagination";
-import Reveal from "@/components/Reveal";
-import { BlogCard, BlogIntro, PageBanner } from "@/components/Sections";
+import { LeafBranch, Script } from "@/components/shared/Decor";
+import Pagination from "@/components/shared/Pagination";
+import Reveal from "@/components/shared/Reveal";
+import { BlogCard } from "@/components/blog/BlogCard";
+import { BlogIntro } from "@/components/blog/BlogIntro";
+import { PageBanner } from "@/components/shared/PageBanner";
 import { posts } from "@/lib/data";
 
 export const metadata: Metadata = { title: "Our Blogs" };

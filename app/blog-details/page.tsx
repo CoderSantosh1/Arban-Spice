@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { Calendar, Check, ChevronRight, CrossedUtensils, Folder, Quote, Search, User } from "@/components/Icons";
-import Reveal from "@/components/Reveal";
-import { PageBanner } from "@/components/Sections";
+import { Calendar, Check, ChevronRight, CrossedUtensils, Folder, Quote, Search, User } from "@/components/shared/Icons";
+import Reveal from "@/components/shared/Reveal";
+import { PageBanner } from "@/components/shared/PageBanner";
 import { posts } from "@/lib/data";
 
 export const metadata: Metadata = { title: "The Impact of Fresh Ingredients on Great Food" };

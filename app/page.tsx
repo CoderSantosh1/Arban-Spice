@@ -1,7 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight } from "@/components/Icons";
-import { AboutIntro, BlogSection, ChefsSection, GallerySection, MenuCategories, TestimonialsSection } from "@/components/Sections";
+import { ArrowRight } from "@/components/shared/Icons";
+import { AboutIntro } from "@/components/about/AboutIntro";
+import { BlogSection } from "@/components/blog/BlogSection";
+import { ChefsSection } from "@/components/home/ChefsSection";
+import { GallerySection } from "@/components/home/GallerySection";
+import { MenuCategories } from "@/components/home/MenuCategories";
+import { TestimonialsSection } from "@/components/testimonials/TestimonialsSection";
 
 function Hero() {
   return (

@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import { LeafBranch } from "@/components/Decor";
-import Pagination from "@/components/Pagination";
-import Reveal from "@/components/Reveal";
-import SectionHeading from "@/components/SectionHeading";
-import { PageBanner, TestimonialCard } from "@/components/Sections";
+import { LeafBranch } from "@/components/shared/Decor";
+import Pagination from "@/components/shared/Pagination";
+import Reveal from "@/components/shared/Reveal";
+import SectionHeading from "@/components/shared/SectionHeading";
+import { PageBanner } from "@/components/shared/PageBanner";
+import { TestimonialCard } from "@/components/testimonials/TestimonialCard";
 import { testimonials } from "@/lib/data";
 
 export const metadata: Metadata = { title: "Testimonials" };

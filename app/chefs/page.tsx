@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
-import { LeafBranch } from "@/components/Decor";
-import Pagination from "@/components/Pagination";
-import Reveal from "@/components/Reveal";
-import SectionHeading from "@/components/SectionHeading";
-import { ChefCard, PageBanner } from "@/components/Sections";
+import { LeafBranch } from "@/components/shared/Decor";
+import Pagination from "@/components/shared/Pagination";
+import Reveal from "@/components/shared/Reveal";
+import SectionHeading from "@/components/shared/SectionHeading";
+import { ChefCard } from "@/components/home/ChefCard";
+import { PageBanner } from "@/components/shared/PageBanner";
 import { chefs } from "@/lib/data";
 
 export const metadata: Metadata = { title: "Our Chefs" };
