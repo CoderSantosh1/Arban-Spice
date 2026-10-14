@@ -32,10 +32,6 @@
           {
             "label": "Testimonials",
             "href": "/testimonial"
-          },
-          {
-            "label": "Book a Table",
-            "href": "/book-table"
           }
         ]
       },
@@ -235,7 +231,7 @@
       ],
       "openingHoursTitle": "Opening Hours",
       "contactTitle": "Contact Info",
-      "copyrightText": "Copyright © 2026. All rights reserved. Powered by Lestow.",
+      "copyrightText": "Copyright © 2026 All rights reserved Powered by Lestow",
       "socials": [
         {
           "icon": "facebook",
