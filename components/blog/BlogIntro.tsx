@@ -1,12 +1,13 @@
 import SectionHeading from "@/components/shared/SectionHeading";
+import { blogIntroContent } from "@/app/data";
 
 export function BlogIntro() {
   return (
     <SectionHeading
-      eyebrow="Our Blog"
+      eyebrow={blogIntroContent.eyebrow}
       title={
         <>
-          Latest <em>Food Stories</em>
+          {blogIntroContent.titleStart} <em>{blogIntroContent.titleHighlight}</em>
         </>
       }
       text={

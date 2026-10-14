@@ -2,17 +2,16 @@
 
 import Image from "next/image";
 import { useCallback, useEffect, useState } from "react";
-import { gallery } from "@/lib/data";
-import { ChevronLeft, ChevronRight, Close, Plus } from "./Icons";
+import { gallery, galleryGridContent } from "@/app/data";
+import { IconById } from "./IconById";
+
 import Reveal from "./Reveal";
 
-const tags = ["Food", "Ambience", "Kitchen", "Food", "Ambience", "Dessert", "Drinks", "Food", "Food", "Food", "Food", "Food", "Kitchen", "Ambience", "Dessert"];
-const filters = ["All", "Food", "Ambience", "Kitchen", "Dessert", "Drinks"];
 
 export default function GalleryGrid() {
-  const [filter, setFilter] = useState("All");
+  const [filter, setFilter] = useState(galleryGridContent.filters[0]);
   const [open, setOpen] = useState<number | null>(null);
-  const items = gallery.map((src, i) => ({ src, i, tag: tags[i] })).filter((g) => filter === "All" || g.tag === filter);
+  const items = gallery.map((src, i) => ({ src, i, tag: galleryGridContent.tags[i] })).filter((g) => filter === galleryGridContent.filters[0] || g.tag === filter);
 
   const step = useCallback(
     (d: number) => setOpen((o) => (o === null ? o : (o + d + gallery.length) % gallery.length)),
@@ -37,7 +36,7 @@ export default function GalleryGrid() {
   return (
     <>
       <Reveal className="mt-10 flex flex-wrap justify-center gap-2">
-        {filters.map((f) => (
+        {galleryGridContent.filters.map((f) => (
           <button
             key={f}
             type="button"
@@ -57,13 +56,13 @@ export default function GalleryGrid() {
             <button
               type="button"
               onClick={() => setOpen(i)}
-              aria-label={`Open photo ${i + 1}`}
+              aria-label={`${galleryGridContent.labels.open} ${i + 1}`}
               className={`group zoom-img shine relative block w-full overflow-hidden ${i < 3 ? "aspect-[340/200]" : "aspect-[340/180]"}`}
             >
               <Image src={src} alt={`Gallery photo ${i + 1}`} fill sizes="(min-width:1024px) 340px, (min-width:640px) 50vw, 100vw" className="object-cover" />
               <span className="absolute inset-0 grid place-items-center bg-navy/0 transition-colors duration-500 group-hover:bg-navy/50">
                 <span className="grid h-12 w-12 scale-0 rotate-90 place-items-center rounded-full bg-gold text-white transition-transform duration-500 group-hover:scale-100 group-hover:rotate-0">
-                  <Plus className="h-6 w-6" />
+                  <IconById icon={galleryGridContent.icons.open} className="h-6 w-6" />
                 </span>
               </span>
             </button>
@@ -72,30 +71,30 @@ export default function GalleryGrid() {
       </div>
 
       {open !== null && (
-        <div role="dialog" aria-modal="true" aria-label="Photo viewer" className="fixed inset-0 z-[90] grid animate-[fadeIn_0.3s] place-items-center bg-black/90 p-4" onClick={() => setOpen(null)}>
+        <div role="dialog" aria-modal="true" aria-label={galleryGridContent.labels.viewer} className="fixed inset-0 z-[90] grid animate-[fadeIn_0.3s] place-items-center bg-black/90 p-4" onClick={() => setOpen(null)}>
           <div className="relative aspect-[3/2] w-full max-w-5xl animate-[pulseIn_0.5s]" onClick={(e) => e.stopPropagation()}>
             <Image key={open} src={gallery[open]} alt={`Gallery photo ${open + 1}`} fill sizes="100vw" loading="eager" className="animate-[fadeIn_0.4s] object-contain" />
           </div>
-          <button type="button" aria-label="Close" onClick={() => setOpen(null)} className="absolute top-5 right-5 grid h-12 w-12 place-items-center rounded-full border border-white/30 text-white transition-transform duration-500 hover:rotate-90 hover:bg-gold">
-            <Close className="h-6 w-6" />
+          <button type="button" aria-label={galleryGridContent.labels.close} onClick={() => setOpen(null)} className="absolute top-5 right-5 grid h-12 w-12 place-items-center rounded-full border border-white/30 text-white transition-transform duration-500 hover:rotate-90 hover:bg-gold">
+            <IconById icon={galleryGridContent.icons.close} className="h-6 w-6" />
           </button>
           {[
-            [-1, "left-4", ChevronLeft],
-            [1, "right-4", ChevronRight],
+            [-1, "left-4", galleryGridContent.icons.previous],
+            [1, "right-4", galleryGridContent.icons.next],
           ].map(([d, pos, Icon]) => {
-            const I = Icon as typeof ChevronLeft;
+            const iconId = Icon as import("@/types").IconId;
             return (
               <button
                 key={pos as string}
                 type="button"
-                aria-label={d === 1 ? "Next photo" : "Previous photo"}
+                aria-label={d === 1 ? galleryGridContent.labels.next : galleryGridContent.labels.previous}
                 onClick={(e) => {
                   e.stopPropagation();
                   step(d as number);
                 }}
                 className={`absolute top-1/2 ${pos} grid h-12 w-12 -translate-y-1/2 place-items-center rounded-full bg-gold text-white transition-transform hover:scale-110`}
               >
-                <I className="h-6 w-6" />
+                <IconById icon={iconId} className="h-6 w-6" />
               </button>
             );
           })}

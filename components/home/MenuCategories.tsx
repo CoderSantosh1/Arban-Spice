@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { menuCategories } from "@/lib/data";
+import { homeCopy, menuCategories } from "@/app/data";
 import { LeafBranch, Script } from "@/components/shared/Decor";
 import { ArrowRight } from "@/components/shared/Icons";
 import Reveal from "@/components/shared/Reveal";
@@ -10,19 +10,18 @@ export function MenuCategories() {
   return (
     <section className="relative overflow-hidden py-16 lg:py-24">
       <LeafBranch className="absolute top-24 -left-10 h-72 w-44 animate-sway opacity-60" />
-      <Script className="absolute top-0 -right-4 text-[160px]">Menu</Script>
+      <Script className="absolute top-0 -right-4 text-[160px]">{homeCopy.menu.script}</Script>
       <div className="container-x relative">
         <SectionHeading
-          eyebrow="Our Menu"
+          eyebrow={homeCopy.menu.eyebrow}
           title={
             <>
-              A Taste for <em>Every</em> Mood
+              {homeCopy.menu.titleStart} <em>{homeCopy.menu.titleHighlight}</em> {homeCopy.menu.titleEnd}
             </>
           }
           text={
             <>
-              From delicious breakfasts to flavourful appetisers and refreshing drinks,
-              <br className="hidden sm:block" /> explore a menu crafted to delight every palate.
+              {homeCopy.menu.description}
             </>
           }
         />
@@ -38,7 +37,7 @@ export function MenuCategories() {
                   <h3 className="font-serif text-[28px] text-ink">{c.title}</h3>
                   <span className="mx-auto mt-3 block h-[2px] w-7 bg-gold-2 transition-all duration-500 group-hover:w-16" />
                   <span className="mt-4 inline-flex items-center gap-2 text-[12px] font-semibold tracking-[0.2em] text-gold uppercase">
-                    View menu
+                    {homeCopy.menu.viewLabel}
                     <ArrowRight className="h-4 w-0 opacity-0 transition-all duration-500 group-hover:w-4 group-hover:opacity-100" />
                   </span>
                 </div>

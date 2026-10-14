@@ -1,0 +1,42 @@
+import categoryJson from "./category.json";
+import type { CategoryData, Dish } from "@/types";
+
+const data = categoryJson as unknown as CategoryData;
+const sections = data.categories.ArbanSpice.sections;
+
+export const site = data.common.site;
+export const nav = data.common.navigation;
+export const openingHours = data.common.openingHours;
+export const assets = data.common.assets;
+export const headerContent = data.common.header;
+export const footerContent = data.common.footer;
+export const bookingPageContent = data.common.bookingPage;
+export const formContent = data.common.forms;
+export const contactPageContent = data.common.contactPage;
+export const galleryGridContent = data.common.galleryGrid;
+export const menuPageContent = data.common.menuPage;
+export const homeHeroContent = data.common.homeHero;
+export const aboutIntroContent = data.common.aboutIntro;
+export const blogIntroContent = data.common.blogIntro;
+export const testimonialIntroContent = data.common.testimonialIntro;
+export const blogDetailContent = data.common.blogDetail;
+export const pageTitles = data.common.pageTitles;
+export const uiText = data.common.ui;
+export const galleryPageContent = data.common.galleryPage;
+export const chefsPageContent = data.common.chefsPage;
+export const testimonialPageContent = data.common.testimonialPage;
+export const menuCategories = sections.Home.menuCategories;
+export const homeCopy = sections.Home.copy;
+export const homeChefs = sections.Home.chefs;
+export const chefs = sections.Chefs.items;
+export const gallery = sections.Gallery.items;
+export const testimonials = sections.Testimonials.items;
+export const posts = sections.Blogs.items;
+export const specials = sections.Specials.items;
+export const mainMenu = sections.Menu.mainMenu;
+export const seafood = sections.Menu.seafood;
+export const desserts = sections.Menu.desserts;
+export const achievements = sections.About.achievements;
+export const whyChooseContent = sections.About.whyChoose;
+
+export type { Dish };

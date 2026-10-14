@@ -23,7 +23,7 @@ export default function SectionHeading({ eyebrow, title, text, align = "center",
       <Reveal
         as="h2"
         delay={120}
-        className={`mt-4 font-serif text-[34px] leading-[1.12] font-medium sm:text-5xl [&_em]:text-gold [&_em]:not-italic ${
+        className={`mt-4 font-serif text-[34px] leading-[1.12] font-medium sm:text-5xl lg:text-[54px] [&_em]:text-gold [&_em]:not-italic ${
           light ? "text-white" : "text-ink"
         }`}
       >

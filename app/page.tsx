@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { assets, homeHeroContent } from "@/app/data";
 import Link from "next/link";
 import { ArrowRight } from "@/components/shared/Icons";
 import { AboutIntro } from "@/components/about/AboutIntro";
@@ -11,7 +12,7 @@ import { TestimonialsSection } from "@/components/testimonials/TestimonialsSecti
 function Hero() {
   return (
     <section className="relative isolate flex min-h-[520px] items-center overflow-hidden bg-navy sm:min-h-[560px] lg:h-[calc(100svh-126px)] lg:max-h-[720px]">
-      <Image src="/home/hero.png" alt="" fill priority sizes="100vw" className="-z-20 animate-kenburns object-cover object-[70%_center]" />
+      <Image src={assets.homeHero} alt="" fill priority sizes="100vw" className="-z-20 animate-kenburns object-cover object-[70%_center]" />
       <div className="absolute inset-0 -z-10 " />
       <div className="absolute inset-0 -z-10" />
 
@@ -22,23 +23,23 @@ function Hero() {
       <div className="container-x py-20">
         <div className="hero-in max-w-[720px] text-white">
           <p className="flex items-center gap-4 text-[13px] font-medium tracking-[0.25em] text-gold-2 uppercase">
-            <span className="h-px w-10 bg-gold-2" /> <span className="whitespace-nowrap">Welcome to ArbanSpice</span>
+            <span className="h-px w-10 bg-gold-2" /> <span className="whitespace-nowrap">{homeHeroContent.eyebrow}</span>
             <span className="hidden h-px w-10 bg-gold-2 sm:block" />
           </p>
           <h1 className="mt-5 font-serif text-[44px] leading-[1.08] font-medium sm:text-[64px]">
-            Good Food
+            {homeHeroContent.lineOne}
             <br />
-            <span className="text-gold-2">Brings People</span> Together
+            <span className="text-gold-2">{homeHeroContent.highlight}</span> {homeHeroContent.lineTwo}
           </h1>
           {/* <p className="mt-6 max-w-[500px] text-[17px] leading-relaxed text-white/90">
             A perfect blend of authentic flavours, fresh ingredients and warm hospitality. Experience unforgettable dining moments at ArbanSpice.
           </p> */}
           <div className="mt-9 flex flex-wrap gap-4">
             <Link href="/menu" className="btn-gold">
-              Explore Menu <ArrowRight className="h-5 w-5" />
+              {homeHeroContent.menuLabel} <ArrowRight className="h-5 w-5" />
             </Link>
             <Link href="/book-table" className="btn-outline light">
-              Book a Table
+              {homeHeroContent.bookingLabel}
             </Link>
           </div>
         </div>
@@ -46,7 +47,7 @@ function Hero() {
 
       <a
         href="#about"
-        aria-label="Scroll down"
+        aria-label={homeHeroContent.scrollLabel}
         className="absolute bottom-6 left-1/2 hidden h-11 w-7 -translate-x-1/2 justify-center rounded-full border-2 border-white/60 pt-2 sm:flex"
       >
         <span className="h-2 w-1 rounded-full bg-gold-2" style={{ animation: "scrollDot 1.6s ease-in-out infinite" }} />

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { gallery } from "@/lib/data";
+import { gallery, homeCopy } from "@/app/data";
 import Carousel from "@/components/shared/Carousel";
 import { LeafBranch, Script } from "@/components/shared/Decor";
 import Reveal from "@/components/shared/Reveal";
@@ -10,19 +10,18 @@ export function GallerySection() {
   return (
     <section className="relative overflow-hidden py-16 lg:py-24">
       <LeafBranch className="absolute top-16 -left-10 h-72 w-44 animate-sway opacity-60" />
-      <Script className="absolute top-10 -right-6 text-[150px]">Gallery</Script>
+      <Script className="absolute top-10 -right-6 text-[150px]">{homeCopy.gallery.script}</Script>
       <div className="container-x relative">
         <SectionHeading
-          eyebrow="Our Gallery"
+          eyebrow={homeCopy.gallery.eyebrow}
           title={
             <>
-              Moments from <em>Our Restaurant</em>
+              {homeCopy.gallery.titleStart} <em>{homeCopy.gallery.titleHighlight}</em>
             </>
           }
           text={
             <>
-              Discover the ambience, delicious food and memorable experiences
-              <br className="hidden sm:block" /> that make our restaurant special.
+              {homeCopy.gallery.description}
             </>
           }
         />
@@ -41,7 +40,7 @@ export function GallerySection() {
           </Carousel>
         </Reveal>
         <Reveal delay={200} className="mt-8 text-center">
-          <Link href="/gallery" className="btn-outline px-16">View more</Link>
+          <Link href="/gallery" className="btn-outline px-16">{homeCopy.gallery.viewLabel}</Link>
         </Reveal>
       </div>
     </section>

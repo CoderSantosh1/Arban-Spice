@@ -2,30 +2,10 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import { openingHours, site } from "@/lib/data";
-import {
-  ChevronRight,
-  Facebook,
-  Instagram,
-  MailSolid,
-  MapPin,
-  Owl,
-  Phone,
-  Twitter,
-  Youtube,
-} from "@/components/shared/Icons";
+import { assets, footerContent, openingHours, site } from "@/app/data";
+import { IconById } from "@/components/shared/IconById";
 import Reveal from "@/components/shared/Reveal";
 
-const links = [
-  ["Home", "/"],
-  ["About Us", "/about"],
-  ["Our Menu", "/menu"],
-  ["Gallery", "/gallery"],
-  ["Blog", "/blog"],
-  ["Contact Us", "/contact"],
-];
-
-const socials = [Facebook, Instagram, Twitter, Youtube, Owl];
 
 function Title({ children }: { children: string }) {
   return (
@@ -42,7 +22,7 @@ export default function Footer() {
 
       {/* Full-width generated background image */}
       <Image
-        src="/common/footer-bg.png"
+        src={assets.footerBackground}
         alt=""
         fill
         sizes="100vw"
@@ -71,30 +51,27 @@ export default function Footer() {
         {/* Brand */}
         <Reveal className="lg:pr-8">
           <Image
-            src="/common/logo-light.png"
-            alt="ArbanSpice Restaurant"
+            src={assets.logo}
+            alt={footerContent.logoAlt}
             width={520}
             height={132}
             className="h-[65px] w-auto object-contain sm:h-[72px]"
           />
 
           <p className="mt-6 font-serif text-[16px] leading-relaxed text-white/90">
-            At ArbanSpice, we bring people together with authentic flavours,
-            warm hospitality and unforgettable dining experiences. Fresh
-            ingredients, inspired recipes and a cozy ambience make every visit
-            special.
+            {footerContent.description}
           </p>
 
           {/* Social links */}
           <div className="mt-7 flex flex-wrap gap-3">
-            {socials.map((Icon, i) => (
+            {footerContent.socials.map(({ icon, label, href }) => (
               <a
-                key={i}
-                href="#"
-                aria-label={`Social link ${i + 1}`}
+                key={label}
+                href={href ?? "#"}
+                aria-label={label}
                 className="grid h-10 w-10 place-items-center rounded-full border border-gold-2 text-white transition-colors duration-300 hover:bg-gold hover:text-white"
               >
-                <Icon className="h-[18px] w-[18px]" />
+                <IconById icon={icon} className="h-[18px] w-[18px]" />
               </a>
             ))}
           </div>
@@ -105,16 +82,16 @@ export default function Footer() {
           delay={100}
           className="md:border-l md:border-gold/40 md:pl-6 lg:px-7"
         >
-          <Title>Quick Links</Title>
+          <Title>{footerContent.quickLinksTitle}</Title>
 
           <ul className="mt-6 space-y-3">
-            {links.map(([label, href]) => (
+            {footerContent.quickLinks.map(({ label, href }) => (
               <li key={href}>
                 <Link
                   href={href}
                   className="group flex items-center gap-3 transition-colors hover:text-gold-2"
                 >
-                  <ChevronRight className="h-4 w-4 shrink-0 text-gold transition-transform duration-300 group-hover:translate-x-1" />
+                  <IconById icon={footerContent.quickLinkIcon} className="h-4 w-4 shrink-0 text-gold transition-transform duration-300 group-hover:translate-x-1" />
                   <span>{label}</span>
                 </Link>
               </li>
@@ -127,7 +104,7 @@ export default function Footer() {
           delay={200}
           className="md:border-l md:border-gold/40 md:pl-6 lg:px-7"
         >
-          <Title>Opening Hours</Title>
+          <Title>{footerContent.openingHoursTitle}</Title>
 
           <ul className="mt-6 text-[14px] sm:text-[15px]">
             {openingHours.map(([day, hours]) => (
@@ -149,24 +126,22 @@ export default function Footer() {
           delay={300}
           className="md:border-l md:border-gold/40 md:pl-6 lg:pl-8"
         >
-          <Title>Contact Info</Title>
+          <Title>{footerContent.contactTitle}</Title>
 
           <ul className="mt-6 space-y-5 text-[14px] leading-relaxed sm:text-[15px]">
             <li className="flex items-center gap-4">
               <span className="grid h-11 w-11 shrink-0 place-items-center rounded-full border border-gold-2 text-gold-2">
-                <MapPin className="h-5 w-5" />
+                <IconById icon={footerContent.contactIcons.address} className="h-5 w-5" />
               </span>
 
               <span>
-                {site.fullAddress[0]}
-                <br />
-                {site.fullAddress[1]}
+                {footerContent.addressLines.map((line, index) => <span key={`${line}-${index}`} className="block">{line}</span>)}
               </span>
             </li>
 
             <li className="flex items-center gap-4">
               <span className="grid h-11 w-11 shrink-0 place-items-center rounded-full border border-gold-2 text-gold-2">
-                <Phone className="h-5 w-5" />
+                <IconById icon={footerContent.contactIcons.phone} className="h-5 w-5" />
               </span>
 
               <a
@@ -179,7 +154,7 @@ export default function Footer() {
 
             <li className="flex items-center gap-4">
               <span className="grid h-11 w-11 shrink-0 place-items-center rounded-full border border-gold-2 text-gold-2">
-                <MailSolid className="h-5 w-5" />
+                <IconById icon={footerContent.contactIcons.email} className="h-5 w-5" />
               </span>
 
               <a
@@ -193,13 +168,8 @@ export default function Footer() {
         </Reveal>
       </div>
 
-      {/* Copyright bar */}
       <div className="relative z-10 border-t border-gold/50 bg-[#100d09]/90 py-5 text-center text-[13px] text-white/75 sm:text-[15px]">
-        © 2026{" "}
-        <span className="font-serif font-semibold text-gold-2">
-          ArbanSpice
-        </span>
-        . All Rights Reserved.
+        {footerContent.copyrightText}
       </div>
     </footer>
   );

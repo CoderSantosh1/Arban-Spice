@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { assets, uiText } from "@/app/data";
 import { useEffect, useState } from "react";
 import { ArrowUp } from "@/components/shared/Icons";
 
@@ -9,7 +10,7 @@ export function Preloader() {
   return (
     <div aria-hidden className="preloader fixed inset-0 z-[100] grid place-items-center bg-navy">
       <div className="preloader-logo flex flex-col items-center gap-6">
-        <Image src="/common/logo-light.png" alt="" width={520} height={132} priority className="h-16 w-auto" />
+        <Image src={assets.logo} alt="" width={520} height={132} priority className="h-16 w-auto" />
         <span className="relative block h-[2px] w-40 overflow-hidden bg-white/10">
           <span className="absolute inset-0 origin-left bg-gold-2" style={{ animation: "loaderBar 1s ease forwards" }} />
         </span>
@@ -42,7 +43,7 @@ export function ScrollExtras() {
       <div className="fixed top-0 left-0 z-[80] h-[3px] w-full origin-left bg-gradient-to-r from-gold-dark to-gold-2" style={{ transform: `scaleX(${p})` }} />
       <button
         type="button"
-        aria-label="Back to top"
+        aria-label={uiText.backToTop}
         onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
         className={`fixed right-5 bottom-5 z-40 grid h-12 w-12 place-items-center rounded-full bg-navy text-gold-2 shadow-lg transition-all duration-500 hover:-translate-y-1 hover:bg-gold hover:text-white ${
           p > 0.06 ? "translate-y-0 opacity-100" : "pointer-events-none translate-y-6 opacity-0"

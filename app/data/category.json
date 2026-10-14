@@ -1,0 +1,1182 @@
+{
+  "common": {
+    "site": {
+      "name": "ArbanSpice",
+      "address": "1234 Main Street, Suite 100, Springfield, IL 62701, USA",
+      "fullAddress": [
+        "1234 Main Street, Suite 100, Springfield, IL 62701, USA"
+      ],
+      "phone": "+1 00000000",
+      "phone2": "+1 00000001",
+      "email": "info@xyz.com",
+      "email2": "info@Axyz.com",
+      "hours": "Mon - Sun: 9:00 AM - 11:00 PM"
+    },
+    "navigation": [
+      {
+        "label": "Home",
+        "href": "/"
+      },
+      {
+        "label": "About Us",
+        "href": "/about",
+        "children": [
+          {
+            "label": "About Us",
+            "href": "/about"
+          },
+          {
+            "label": "Our Chefs",
+            "href": "/chefs"
+          },
+          {
+            "label": "Testimonials",
+            "href": "/testimonial"
+          },
+          {
+            "label": "Book a Table",
+            "href": "/book-table"
+          }
+        ]
+      },
+      {
+        "label": "Our Menu",
+        "href": "/menu"
+      },
+      {
+        "label": "Gallery",
+        "href": "/gallery"
+      },
+      {
+        "label": "Blog",
+        "href": "/blog",
+        "children": [
+          {
+            "label": "Our Blogs",
+            "href": "/blog"
+          },
+          {
+            "label": "Blog Detail",
+            "href": "/blog-details"
+          }
+        ]
+      },
+      {
+        "label": "Contact Us",
+        "href": "/contact"
+      }
+    ],
+    "openingHours": [
+      [
+        "Monday",
+        "10:00 AM – 10:00 PM"
+      ],
+      [
+        "Tuesday",
+        "10:00 AM – 10:00 PM"
+      ],
+      [
+        "Wednesday",
+        "10:00 AM – 10:00 PM"
+      ],
+      [
+        "Thursday",
+        "10:00 AM – 10:00 PM"
+      ],
+      [
+        "Friday",
+        "10:00 AM – 11:00 PM"
+      ],
+      [
+        "Saturday",
+        "10:00 AM – 11:00 PM"
+      ],
+      [
+        "Sunday",
+        "10:00 AM – 10:00 PM"
+      ]
+    ],
+    "assets": {
+      "logo": "/common/logo-light.png",
+      "footerBackground": "/common/footer-bg.png",
+      "testimonialsBackground": "/common/testimonials-bg.png",
+      "contactInterior": "/contact/contact-interior.png",
+      "homeHero": "/home/hero.png",
+      "menuSideOne": "/menu/side-1.jpg",
+      "menuSideTwo": "/menu/side-2.jpg",
+      "prawnPlate": "/common/prawn-plate.jpg",
+      "bookingDining": "/book-table/dining.jpg",
+      "bookingHours": "/book-table/hours-band.jpg",
+      "blogDetailMain": "/blog/detail-main.jpg",
+      "blogBowl": "/blog/bowl.jpg",
+      "galleryOne": "/gallery/gallery-1.jpg",
+      "aboutDish": "/home/about-dish.jpg",
+      "achievementsBackground": "/about/achievements-bg.png",
+      "whyChoose": "/about/why-choose-us.jpg",
+      "pageBanner": "/common/page-banner.jpg",
+      "galleryLeftArrow": "/chefs/left.png",
+      "galleryRightArrow": "/chefs/right.png",
+      "latestPostOne": "/gallery/gallery-1.jpg",
+      "latestPostTwo": "/gallery/gallery-13.jpg",
+      "latestPostThree": "/home/menu-drinks.jpg",
+      "latestPostFour": "/menu/special-4.jpg"
+    },
+    "iconIds": [
+      "mapPin",
+      "phone",
+      "clock",
+      "facebook",
+      "instagram",
+      "twitter",
+      "youtube",
+      "chevronDown",
+      "menu",
+      "close",
+      "chevronRight",
+      "mailSolid",
+      "owl",
+      "sun",
+      "moon",
+      "mapPinLine",
+      "phoneLine",
+      "mail",
+      "xLogo",
+      "pinterest",
+      "arrowRight",
+      "user",
+      "calendar",
+      "users",
+      "chat",
+      "check",
+      "chefHat",
+      "forkKnife",
+      "trophy",
+      "cloche",
+      "tableIcon",
+      "leaf",
+      "arrowLeft",
+      "plus",
+      "chevronLeft",
+      "plate",
+      "bowl",
+      "fish",
+      "cake"
+    ],
+    "header": {
+      "brandAriaLabel": "ArbanSpice home",
+      "logoAlt": "ArbanSpice Restaurant",
+      "navAriaLabel": "Main",
+      "bookTableLabel": "Book a Table",
+      "openMenuLabel": "Open menu",
+      "closeMenuLabel": "Close menu",
+      "socials": [
+        {
+          "icon": "facebook",
+          "label": "Facebook",
+          "href": "https://facebook.com"
+        },
+        {
+          "icon": "instagram",
+          "label": "Instagram",
+          "href": "https://instagram.com"
+        },
+        {
+          "icon": "twitter",
+          "label": "Twitter",
+          "href": "https://twitter.com"
+        },
+        {
+          "icon": "youtube",
+          "label": "YouTube",
+          "href": "https://youtube.com"
+        }
+      ],
+      "contactIcons": {
+        "address": "mapPin",
+        "phone": "phone",
+        "hours": "clock"
+      },
+      "submenuLabelPrefix": "Toggle ",
+      "icons": {
+        "dropdown": "chevronDown",
+        "menu": "menu",
+        "close": "close"
+      }
+    },
+    "footer": {
+      "logoAlt": "ArbanSpice Restaurant",
+      "description": "At ArbanSpice, we bring people together with authentic flavours, warm hospitality and unforgettable dining experiences. Fresh ingredients, inspired recipes and a cozy ambience make every visit special.",
+      "quickLinksTitle": "Quick Links",
+      "quickLinks": [
+        {
+          "label": "Home",
+          "href": "/"
+        },
+        {
+          "label": "About Us",
+          "href": "/about"
+        },
+        {
+          "label": "Our Menu",
+          "href": "/menu"
+        },
+        {
+          "label": "Gallery",
+          "href": "/gallery"
+        },
+        {
+          "label": "Blog",
+          "href": "/blog"
+        },
+        {
+          "label": "Contact Us",
+          "href": "/contact"
+        }
+      ],
+      "openingHoursTitle": "Opening Hours",
+      "contactTitle": "Contact Info",
+      "copyrightText": "Copyright © 2026. All rights reserved. Powered by Lestow.",
+      "socials": [
+        {
+          "icon": "facebook",
+          "label": "Facebook",
+          "href": "https://facebook.com"
+        },
+        {
+          "icon": "instagram",
+          "label": "Instagram",
+          "href": "https://instagram.com"
+        },
+        {
+          "icon": "twitter",
+          "label": "Twitter",
+          "href": "https://twitter.com"
+        },
+        {
+          "icon": "youtube",
+          "label": "YouTube",
+          "href": "https://youtube.com"
+        },
+        {
+          "icon": "owl",
+          "label": "ArbanSpice"
+        }
+      ],
+      "contactIcons": {
+        "address": "mapPin",
+        "phone": "phone",
+        "email": "mailSolid"
+      },
+      "quickLinkIcon": "chevronRight",
+      "addressLines": [
+        "1234 Main Street, Suite 100, Springfield, IL 62701, USA"
+      ]
+    },
+    "bookingPage": {
+      "title": "Book a Table",
+      "eyebrow": "Reservation",
+      "headingStart": "Book a",
+      "headingEnd": "Table",
+      "intro": "Enjoy a memorable dining experience with delicious food, a warm ambience and excellent service. Reserve your table in advance to avoid any wait.",
+      "formEyebrow": "Make a reservation",
+      "formTitle": "Book Your Table",
+      "formIntro": "Fill in the details below and we’ll confirm your booking shortly.",
+      "openingHours": [
+        {
+          "icon": "sun",
+          "title": "Opening",
+          "days": "Monday – Sunday",
+          "time": "9:00 AM – 10:00 PM",
+          "tone": "opening",
+          "animation": "animate-spin-slow"
+        },
+        {
+          "icon": "moon",
+          "title": "Closing",
+          "days": "Monday – Sunday",
+          "time": "10:00 PM",
+          "tone": "closing",
+          "animation": "animate-sway"
+        }
+      ]
+    },
+    "forms": {
+      "success": {
+        "messageTitle": "Message sent!",
+        "messageText": "Thank you for reaching out. Our team will get back to you shortly.",
+        "bookingTitle": "Table requested!",
+        "bookingText": "Thank you! We’ve received your reservation and will confirm your booking shortly.",
+        "resetLabel": "Send another",
+        "icon": "check"
+      },
+      "submit": {
+        "sendingLabel": "Sending…",
+        "contactLabel": "Send message",
+        "bookingLabel": "Book a table",
+        "icon": "arrowRight"
+      },
+      "contact": {
+        "name": "Your Name",
+        "email": "Your Email",
+        "phone": "Phone Number",
+        "subject": "Subject",
+        "message": "Your Message",
+        "subjects": [
+          "Reservation",
+          "Private Event",
+          "Feedback",
+          "Other"
+        ],
+        "subjectIcon": "chevronDown"
+      },
+      "booking": {
+        "name": "Your Name*",
+        "email": "Your Email*",
+        "phone": "Phone Number*",
+        "date": "Date",
+        "time": "Time*",
+        "guestCount": "Number of Guests*",
+        "request": "Special Request (Optional)",
+        "times": [
+          "12:00 PM",
+          "1:00 PM",
+          "2:00 PM",
+          "7:00 PM",
+          "8:00 PM",
+          "9:00 PM",
+          "10:00 PM"
+        ],
+        "guestCountOptions": 10,
+        "guestSingular": "Guest",
+        "guestPlural": "Guests",
+        "icons": {
+          "name": "user",
+          "email": "mail",
+          "phone": "phoneLine",
+          "date": "calendar",
+          "time": "clock",
+          "guests": "users",
+          "request": "chat",
+          "dropdown": "chevronDown"
+        }
+      }
+    },
+    "contactPage": {
+      "title": "Contact Us",
+      "eyebrow": "Contact us",
+      "headingStart": "Get in",
+      "headingEnd": "Touch",
+      "intro": "We’d love to hear from you. Whether you have a question, a special request or want to make a reservation, our team is here to help.",
+      "socialTitle": "Follow Us",
+      "formEyebrow": "Send us a message",
+      "formHeadingFirst": "We’d Love to",
+      "formHeadingSecond": "Hear from You",
+      "mapTitle": "ArbanSpice location map",
+      "mapUrl": "https://www.google.com/maps?q=Connaught+Place,+New+Delhi&output=embed",
+      "cards": [
+        {
+          "icon": "mapPinLine",
+          "title": "Our Location",
+          "lines": [
+            "123 Food Street, Connaught",
+            "Place, New Delhi, India - 110001"
+          ],
+          "small": true
+        },
+        {
+          "icon": "phoneLine",
+          "title": "Call Us",
+          "useSitePhones": true
+        },
+        {
+          "icon": "mail",
+          "title": "Email Us",
+          "useSiteEmails": true
+        }
+      ],
+      "socials": [
+        {
+          "icon": "facebook",
+          "label": "Facebook",
+          "href": "https://facebook.com"
+        },
+        {
+          "icon": "instagram",
+          "label": "Instagram",
+          "href": "https://instagram.com"
+        },
+        {
+          "icon": "xLogo",
+          "label": "X",
+          "href": "https://x.com"
+        },
+        {
+          "icon": "youtube",
+          "label": "YouTube",
+          "href": "https://youtube.com"
+        },
+        {
+          "icon": "pinterest",
+          "label": "Pinterest",
+          "href": "https://pinterest.com"
+        }
+      ]
+    },
+    "galleryGrid": {
+      "filters": [
+        "All",
+        "Food",
+        "Ambience",
+        "Kitchen",
+        "Dessert",
+        "Drinks"
+      ],
+      "tags": [
+        "Food",
+        "Ambience",
+        "Kitchen",
+        "Food",
+        "Ambience",
+        "Dessert",
+        "Drinks",
+        "Food",
+        "Food",
+        "Food",
+        "Food",
+        "Food",
+        "Kitchen",
+        "Ambience",
+        "Dessert"
+      ],
+      "labels": {
+        "open": "Open photo",
+        "close": "Close",
+        "next": "Next photo",
+        "previous": "Previous photo",
+        "viewer": "Photo viewer"
+      },
+      "icons": {
+        "open": "plus",
+        "close": "close",
+        "next": "chevronRight",
+        "previous": "chevronLeft"
+      }
+    },
+    "menuPage": {
+      "title": "Our Menu",
+      "sectionTitle": "Our Menu",
+      "intro": "Explore our carefully crafted selection of seafood and desserts, made with the finest ingredients and a passion for great taste.",
+      "seafoodIcon": "fish",
+      "seafoodKicker": "Fresh from the Ocean",
+      "seafoodTitle": "Seafood",
+      "dessertIcon": "cake",
+      "dessertKicker": "Food of Heaven",
+      "dessertTitle": "Desserts",
+      "sectionIcon": "forkKnife",
+      "specialEyebrow": "Our Special Menu",
+      "specialTitleStart": "Chef’s",
+      "specialTitleHighlight": "Specials",
+      "specialDescription": "Discover signature dishes prepared with fresh ingredients and a passion for great taste."
+    },
+    "homeHero": {
+      "eyebrow": "Welcome to ArbanSpice",
+      "lineOne": "Good Food",
+      "highlight": "Brings People",
+      "lineTwo": "Together",
+      "menuLabel": "Explore Menu",
+      "bookingLabel": "Book a Table",
+      "scrollLabel": "Scroll down"
+    },
+    "aboutIntro": {
+      "eyebrow": "About our restaurant",
+      "titleStart": "A",
+      "titleHighlight": "Culinary",
+      "titleEnd": "Journey Made with Passion",
+      "paragraphs": [
+        "At ArbanSpice, we believe good food brings people together. Our restaurant is a perfect blend of authentic flavours, fresh ingredients and modern culinary techniques, creating memorable dining experiences for every guest.",
+        "From traditional favourites to contemporary dishes, every plate is crafted with care by our expert chefs. We are committed to offering exceptional taste, warm hospitality and a relaxed ambience, making every meal at ArbanSpice a special experience.",
+        "Every season our kitchen sources the finest local produce, spices and seafood, so the menu keeps evolving while the warmth of our welcome stays exactly the same."
+      ],
+      "readMoreLabel": "Read more about us",
+      "imageAlt": "Grilled chicken with roasted vegetables"
+    },
+    "blogIntro": {
+      "eyebrow": "Our Blog",
+      "titleStart": "Latest",
+      "titleHighlight": "Food Stories",
+      "description": "Explore our latest articles, food tips, chef’s special recipes and behind the scenes stories from our restaurant."
+    },
+    "testimonialIntro": {
+      "eyebrow": "Testimonials",
+      "titleStart": "What Our",
+      "titleHighlight": "Guests Say",
+      "description": "Real stories from our valued guests who have experienced the taste, ambience and hospitality at our restaurant."
+    },
+    "blogDetail": {
+      "categories": [
+        "Food",
+        "Industry Expertise",
+        "Restaurants",
+        "Fast Casual Restaurants",
+        "Casual Dining",
+        "Pizzerias",
+        "Coffee’s"
+      ],
+      "benefits": [
+        "Better taste and aroma",
+        "Fewer preservatives",
+        "Rich in essential nutrients",
+        "Adds natural colour and texture",
+        "Supports local farmers",
+        "Creates healthier meals"
+      ],
+      "latestPosts": [
+        {
+          "title": "5 Delicious Pasta Recipes You Must Try",
+          "img": "/gallery/gallery-1.jpg",
+          "date": "12 Aug 2024"
+        },
+        {
+          "title": "Behind the Scenes in Our Kitchen",
+          "img": "/gallery/gallery-13.jpg",
+          "date": "08 Aug 2024"
+        },
+        {
+          "title": "Refreshing Summer Drinks for Every Occasion",
+          "img": "/home/menu-drinks.jpg",
+          "date": "03 Aug 2024"
+        },
+        {
+          "title": "Healthy Salad Ideas for a Balanced Diet",
+          "img": "/menu/special-4.jpg",
+          "date": "28 Jul 2024"
+        }
+      ],
+      "copy": {
+        "date": "08 Sep 2024",
+        "author": "Admin",
+        "tags": "Food, Restaurant",
+        "titleStart": "The Impact of Fresh Ingredients on",
+        "titleHighlight": "Great Food",
+        "intro": "Fresh ingredients are the heart of every great dish. They bring natural flavours, vibrant colours and essential nutrients, making food not only delicious but also healthier. In this article, we explore why fresh ingredients matter and how they can transform your dining experience.",
+        "firstSectionTitle": "Why Fresh Ingredients Matter",
+        "firstSectionText": "Using fresh, seasonal ingredients enhances the taste, texture and aroma of every dish. Fresh produce contains more nutrients, fewer preservatives and a natural flavour that processed ingredients simply can’t match.",
+        "secondSectionTitle": "How Fresh Ingredients Enhance Flavour",
+        "secondSectionText": "When ingredients are fresh, their natural flavours shine. From crisp vegetables to aromatic herbs, each element adds depth and richness to the dish, creating a more satisfying and memorable meal.",
+        "thirdSectionTitle": "Tips for Choosing Fresh Ingredients",
+        "thirdSectionText": "Opt for seasonal produce, check for vibrant colours, and choose locally sourced ingredients whenever possible. Fresh ingredients not only taste better but also support sustainable and healthy eating habits.",
+        "quote": "Good food starts with great ingredients. Fresh, local and seasonal produce always makes a difference in every bite.",
+        "quoteAuthor": "— Chef Michael Brown",
+        "categoriesTitle": "Categories",
+        "latestPostsTitle": "Latest Posts",
+        "promoEyebrow": "Taste the difference",
+        "promoTitle": "Fresh Food Brighter Days",
+        "promoButton": "Book a Table"
+      }
+    },
+    "pageTitles": {
+      "about": "About Us",
+      "blog": "Our Blogs",
+      "blogDetail": "The Impact of Fresh Ingredients on Great Food",
+      "gallery": "Gallery",
+      "testimonial": "Testimonials",
+      "chefs": "Our Chefs"
+    },
+    "ui": {
+      "breadcrumbHome": "Home",
+      "pagination": "Pagination",
+      "previousPage": "Previous page",
+      "nextPage": "Next page",
+      "backToTop": "Back to top",
+      "testimonialPagination": "Testimonials pagination",
+      "previousTestimonials": "Previous testimonials",
+      "nextTestimonials": "Next testimonials"
+    },
+    "galleryPage": {
+      "title": "Gallery",
+      "eyebrow": "Our Gallery",
+      "titleStart": "Discover",
+      "titleHighlight": "Our Gallery",
+      "description": "A glimpse into the flavours, ambience and moments that make ArbanSpice special."
+    },
+    "chefsPage": {
+      "eyebrow": "Our Chefs",
+      "titleStart": "Meet Our",
+      "titleHighlight": "Culinary",
+      "titleEnd": "Experts",
+      "description": "Our passionate chefs combine creativity, skill and fresh ingredients to craft every memorable dish."
+    },
+    "testimonialPage": {
+      "eyebrow": "Testimonials",
+      "titleStart": "What Our",
+      "titleHighlight": "Guests Say",
+      "description": "Discover what our guests have to say about the food, atmosphere and hospitality at ArbanSpice."
+    }
+  },
+  "categories": {
+    "ArbanSpice": {
+      "sections": {
+        "Home": {
+          "menuCategories": [
+            {
+              "title": "Breakfast",
+              "img": "/home/menu-breakfast.jpg"
+            },
+            {
+              "title": "Appetizers",
+              "img": "/home/menu-appetizers.jpg"
+            },
+            {
+              "title": "Drinks",
+              "img": "/home/menu-drinks.jpg"
+            }
+          ],
+          "chefs": [
+            {
+              "name": "Rahul Mehta",
+              "role": "Executive Chef",
+              "img": "/home/chef-1.jpg"
+            },
+            {
+              "name": "Priya Sharma",
+              "role": "Pastry Chef",
+              "img": "/home/chef-2.jpg"
+            },
+            {
+              "name": "Amit Verma",
+              "role": "Sous Chef",
+              "img": "/home/chef-3.jpg"
+            }
+          ],
+          "copy": {
+            "menu": {
+              "script": "Menu",
+              "eyebrow": "Our Menu",
+              "titleStart": "A Taste for",
+              "titleHighlight": "Every",
+              "titleEnd": "Mood",
+              "description": "From delicious breakfasts to flavourful appetisers and refreshing drinks, explore a menu crafted to delight every palate.",
+              "viewLabel": "View menu"
+            },
+            "chefs": {
+              "script": "Chefs",
+              "eyebrow": "Our Chefs",
+              "titleStart": "Meet Our",
+              "titleHighlight": "Expert",
+              "titleEnd": "Chefs",
+              "description": "Our talented chefs bring years of experience and a true passion for food, creating dishes that are full of flavour and crafted with care."
+            },
+            "gallery": {
+              "script": "Gallery",
+              "eyebrow": "Our Gallery",
+              "titleStart": "Moments from",
+              "titleHighlight": "Our Restaurant",
+              "description": "Discover the ambience, delicious food and memorable experiences that make our restaurant special.",
+              "viewLabel": "View more"
+            }
+          }
+        },
+        "Chefs": {
+          "items": [
+            {
+              "name": "Rahul Mehta",
+              "role": "Executive Chef",
+              "img": "/chefs/chef-1.jpg"
+            },
+            {
+              "name": "Priya Sharma",
+              "role": "Pastry Chef",
+              "img": "/chefs/chef-2.jpg"
+            },
+            {
+              "name": "Amit Verma",
+              "role": "Sous Chef",
+              "img": "/chefs/chef-3.jpg"
+            },
+            {
+              "name": "Neha Kapoor",
+              "role": "Seafood Chef",
+              "img": "/chefs/chef-4.jpg"
+            },
+            {
+              "name": "Karan Singh",
+              "role": "Grill Chef",
+              "img": "/chefs/chef-5.jpg"
+            },
+            {
+              "name": "Anjali Rao",
+              "role": "Dessert Chef",
+              "img": "/chefs/chef-6.jpg"
+            },
+            {
+              "name": "Vikram Joshi",
+              "role": "Italian Cuisine Chef",
+              "img": "/chefs/chef-7.jpg"
+            },
+            {
+              "name": "Simran Kaur",
+              "role": "Continental Chef",
+              "img": "/chefs/chef-8.jpg"
+            },
+            {
+              "name": "Rohan Malhotra",
+              "role": "Chinese Cuisine Chef",
+              "img": "/chefs/chef-9.jpg"
+            }
+          ]
+        },
+        "Gallery": {
+          "items": [
+            "/gallery/gallery-1.jpg",
+            "/gallery/gallery-2.jpg",
+            "/gallery/gallery-3.jpg",
+            "/gallery/gallery-4.jpg",
+            "/gallery/gallery-5.jpg",
+            "/gallery/gallery-6.jpg",
+            "/gallery/gallery-7.jpg",
+            "/gallery/gallery-8.jpg",
+            "/gallery/gallery-9.jpg",
+            "/gallery/gallery-10.jpg",
+            "/gallery/gallery-11.jpg",
+            "/gallery/gallery-12.jpg",
+            "/gallery/gallery-13.jpg",
+            "/gallery/gallery-14.jpg",
+            "/gallery/gallery-15.jpg"
+          ]
+        },
+        "Testimonials": {
+          "items": [
+            {
+              "name": "Priya Sharma",
+              "city": "New Delhi, India",
+              "img": "/testimonial/priya.jpg",
+              "text": "The food was absolutely delicious! Every dish was full of flavour and beautifully presented. The ambience is perfect for a family dinner. Highly recommended!"
+            },
+            {
+              "name": "Rahul Mehta",
+              "city": "Mumbai, India",
+              "img": "/testimonial/rahul.jpg",
+              "text": "Amazing dining experience! The staff was very courteous and the service was excellent. The food quality and presentation were outstanding. One of the best restaurants in the city!"
+            },
+            {
+              "name": "Sneha Verma",
+              "city": "Bengaluru, India",
+              "img": "/testimonial/sneha.jpg",
+              "text": "A wonderful place with great food and a relaxing ambience. The flavours are authentic and the service is top notch. We had a memorable evening and will definitely visit again!"
+            },
+            {
+              "name": "Amit Kumar",
+              "city": "Chennai, India",
+              "img": "/testimonial/amit.jpg",
+              "text": "The seafood here is simply amazing! Fresh ingredients, perfect seasoning and a beautiful presentation. The overall experience was outstanding. Highly recommended!"
+            },
+            {
+              "name": "Neha Kapoor",
+              "city": "Kolkata, India",
+              "img": "/testimonial/neha.jpg",
+              "text": "From the warm welcome to the delicious food, everything was perfect. The ambience is cozy and elegant. A great place to celebrate special moments with loved ones."
+            },
+            {
+              "name": "Karan Singh",
+              "city": "Pune, India",
+              "img": "/testimonial/karan.jpg",
+              "text": "Absolutely loved the food and service! Each dish was crafted with care and full of flavour. The staff made our experience even more special. Will visit again soon!"
+            },
+            {
+              "name": "Anjali Rao",
+              "city": "Hyderabad, India",
+              "img": "/testimonial/anjali.jpg",
+              "text": "A fantastic dining experience! The menu offers a great variety and everything we tried was delicious. The ambience and hospitality are truly impressive. Highly recommend this restaurant!"
+            },
+            {
+              "name": "Vikram Joshi",
+              "city": "Jaipur, India",
+              "img": "/testimonial/vikram.jpg",
+              "text": "The perfect combination of great food, beautiful ambience and excellent service. We enjoyed every moment and the desserts were outstanding. A must-visit place for food lovers!"
+            },
+            {
+              "name": "Simran Kaur",
+              "city": "Chandigarh, India",
+              "img": "/testimonial/simran.jpg",
+              "text": "The food, ambience and service were all exceptional. It's a wonderful place to enjoy a relaxed meal with family and friends. We had a truly memorable experience!"
+            }
+          ]
+        },
+        "Blogs": {
+          "items": [
+            {
+              "date": "15 Sep 2024",
+              "cat": "Food & Flavour",
+              "title": "5 Delicious Pasta Recipes You Must Try",
+              "text": "Discover easy and flavourful pasta recipes that bring the taste of Italy to your table.",
+              "img": "/blog/pasta.jpg"
+            },
+            {
+              "date": "08 Sep 2024",
+              "cat": "Chef's Special",
+              "title": "Behind the Scenes in Our Kitchen",
+              "text": "Take a closer look at how our chefs create unforgettable dishes with fresh ingredients.",
+              "img": "/blog/kitchen.jpg"
+            },
+            {
+              "date": "03 Sep 2024",
+              "cat": "Drinks & Beverages",
+              "title": "Refreshing Summer Drinks for Every Occasion",
+              "text": "Beat the heat with our handpicked collection of refreshing drinks and coolers.",
+              "img": "/gallery/gallery-7.jpg"
+            },
+            {
+              "date": "28 Aug 2024",
+              "cat": "Food Tips",
+              "title": "How to Cook the Perfect Grilled Steak",
+              "text": "Follow our expert tips to get a juicy, flavourful and perfectly grilled steak.",
+              "img": "/blog/steak.jpg"
+            },
+            {
+              "date": "22 Aug 2024",
+              "cat": "Healthy Eating",
+              "title": "Healthy Salad Ideas for a Balanced Diet",
+              "text": "Try these nutritious and delicious salad recipes for a healthy and refreshing meal.",
+              "img": "/blog/salad.jpg"
+            },
+            {
+              "date": "18 Aug 2024",
+              "cat": "Dessert Recipes",
+              "title": "Decadent Desserts That Everyone Loves",
+              "text": "Indulge in our handpicked dessert recipes that are rich, delicious and easy to make.",
+              "img": "/gallery/gallery-6.jpg"
+            },
+            {
+              "date": "12 Aug 2024",
+              "cat": "Italian Cuisine",
+              "title": "The Secret to an Authentic Italian Pizza",
+              "text": "Learn the tips and techniques to make a perfect Italian pizza at home.",
+              "img": "/blog/pizza.jpg"
+            },
+            {
+              "date": "05 Aug 2024",
+              "cat": "Breakfast Ideas",
+              "title": "Quick & Tasty Breakfast Recipes for Busy Mornings",
+              "text": "Start your day right with these easy and delicious breakfast ideas.",
+              "img": "/blog/breakfast.jpg"
+            },
+            {
+              "date": "28 Jul 2024",
+              "cat": "Seafood Lovers",
+              "title": "Top 5 Seafood Dishes You Should Try",
+              "text": "Explore our chef's favourite seafood recipes that are full of flavour and freshness.",
+              "img": "/blog/salmon.jpg"
+            }
+          ]
+        },
+        "Specials": {
+          "items": [
+            {
+              "title": "Grilled Steak Platter",
+              "text": "Juicy, tender steak served with seasonal vegetables and house special sauce.",
+              "img": "/menu/special-1.jpg",
+              "icon": "plate"
+            },
+            {
+              "title": "Italian Bruschetta",
+              "text": "Crispy bread topped with fresh tomatoes, basil and a touch of olive oil.",
+              "img": "/menu/special-2.jpg",
+              "icon": "cloche"
+            },
+            {
+              "title": "Creamy Mushroom Pasta",
+              "text": "A rich and creamy pasta made with fresh mushrooms and aromatic herbs.",
+              "img": "/menu/special-3.jpg",
+              "icon": "bowl"
+            },
+            {
+              "title": "Fresh Garden Salad",
+              "text": "A perfect mix of seasonal greens, crisp vegetables and our signature dressing.",
+              "img": "/menu/special-4.jpg",
+              "icon": "leaf"
+            }
+          ]
+        },
+        "Menu": {
+          "mainMenu": [
+            [
+              {
+                "name": "Tender Octopus and Fennel",
+                "desc": "Citrus, wild rocket condiment.",
+                "price": 25,
+                "img": "/menu/dish-1.jpg"
+              },
+              {
+                "name": "Purple Corn Tostada",
+                "desc": "Ricotta, goat cheese, beetroot and datterini.",
+                "price": 36,
+                "img": "/menu/dish-2.jpg"
+              },
+              {
+                "name": "Bruno's Scribble",
+                "desc": "Culatello, spalla cotta, mortadella, calacciona.",
+                "price": 59,
+                "img": "/menu/dish-3.jpg"
+              },
+              {
+                "name": "Wild Mushroom Arancini",
+                "desc": "Porcini purée, parmesan, basil.",
+                "price": 18,
+                "img": "/menu/dish-4.jpg"
+              },
+              {
+                "name": "Fish & Chips",
+                "desc": "Atlantic cod fillet, chips, salad, tartare, lemon.",
+                "price": 39,
+                "img": "/menu/dish-5.jpg"
+              }
+            ],
+            [
+              {
+                "name": "Wild Mushroom Arancini",
+                "desc": "Citrus, wild rocket condiment.",
+                "price": 25,
+                "img": "/menu/dish-6.jpg"
+              },
+              {
+                "name": "Crispy Skin Chicken",
+                "desc": "Ricotta, goat cheese, beetroot and datterini.",
+                "price": 36,
+                "img": "/menu/dish-7.jpg"
+              },
+              {
+                "name": "Tender Octopus and Fennel",
+                "desc": "Citrus, wild rocket condiment.",
+                "price": 59,
+                "img": "/menu/dish-8.jpg"
+              },
+              {
+                "name": "Tommy's Margarita",
+                "desc": "Tequila, fresh lime juice, and orange liqueur.",
+                "price": 18,
+                "img": "/menu/dish-9.jpg"
+              },
+              {
+                "name": "Prickly Pear Tonic",
+                "desc": "Prickly pear, chartreuse, key lime, and tonic.",
+                "price": 18,
+                "img": "/menu/dish-10.jpg"
+              }
+            ]
+          ],
+          "seafood": [
+            {
+              "name": "Tender Octopus and Fennel",
+              "desc": "Citrus, wild rocket condiment.",
+              "price": 25
+            },
+            {
+              "name": "Purple Corn Tostada",
+              "desc": "Ricotta, goat cheese, beetroot and datterini.",
+              "price": 36
+            },
+            {
+              "name": "Bruno's Scribble",
+              "desc": "Culatello, Spalla Cotta, Mortadella, Culacciona.",
+              "price": 59
+            },
+            {
+              "name": "Wild Mushroom Arancini",
+              "desc": "Porcini purée, parmesan, basil.",
+              "price": 18
+            },
+            {
+              "name": "Fish & Chips",
+              "desc": "Atlantic cod fillet, chips, salad, tartare, lemon.",
+              "price": 39
+            }
+          ],
+          "desserts": [
+            {
+              "name": "Wild Mushroom Arancini",
+              "desc": "Citrus, wild rocket condiment.",
+              "price": 25
+            },
+            {
+              "name": "Crispy Skin Chicken",
+              "desc": "Ricotta, goat cheese, beetroot and datterini.",
+              "price": 36
+            },
+            {
+              "name": "Tender Octopus and Fennel",
+              "desc": "Citrus, wild rocket condiment.",
+              "price": 59
+            },
+            {
+              "name": "Tommy's Margarita",
+              "desc": "Tequila, fresh lime juice, and orange liqueur",
+              "price": 18
+            },
+            {
+              "name": "Prickly Pear Tonic",
+              "desc": "Prickly Pear, Chancaca, Key Lime, and Tonic",
+              "price": 18
+            }
+          ]
+        },
+        "Booking": {
+          "page": {
+            "title": "Book a Table",
+            "eyebrow": "Reservation",
+            "headingStart": "Book a",
+            "headingEnd": "Table",
+            "intro": "Enjoy a memorable dining experience with delicious food, a warm ambience and excellent service. Reserve your table in advance to avoid any wait.",
+            "formEyebrow": "Make a reservation",
+            "formTitle": "Book Your Table",
+            "formIntro": "Fill in the details below and we’ll confirm your booking shortly.",
+            "openingHours": [
+              {
+                "icon": "sun",
+                "title": "Opening",
+                "days": "Monday – Sunday",
+                "time": "9:00 AM – 10:00 PM",
+                "tone": "opening",
+                "animation": "animate-spin-slow"
+              },
+              {
+                "icon": "moon",
+                "title": "Closing",
+                "days": "Monday – Sunday",
+                "time": "10:00 PM",
+                "tone": "closing",
+                "animation": "animate-sway"
+              }
+            ]
+          }
+        },
+        "Contact": {
+          "page": {
+            "title": "Contact Us",
+            "eyebrow": "Contact us",
+            "headingStart": "Get in",
+            "headingEnd": "Touch",
+            "intro": "We’d love to hear from you. Whether you have a question, a special request or want to make a reservation, our team is here to help.",
+            "socialTitle": "Follow Us",
+            "formEyebrow": "Send us a message",
+            "formHeadingFirst": "We’d Love to",
+            "formHeadingSecond": "Hear from You",
+            "mapTitle": "ArbanSpice location map",
+            "mapUrl": "https://www.google.com/maps?q=Connaught+Place,+New+Delhi&output=embed",
+            "cards": [
+              {
+                "icon": "mapPinLine",
+                "title": "Our Location",
+                "lines": [
+                  "123 Food Street, Connaught",
+                  "Place, New Delhi, India - 110001"
+                ],
+                "small": true
+              },
+              {
+                "icon": "phoneLine",
+                "title": "Call Us",
+                "useSitePhones": true
+              },
+              {
+                "icon": "mail",
+                "title": "Email Us",
+                "useSiteEmails": true
+              }
+            ],
+            "socials": [
+              {
+                "icon": "facebook",
+                "label": "Facebook",
+                "href": "https://facebook.com"
+              },
+              {
+                "icon": "instagram",
+                "label": "Instagram",
+                "href": "https://instagram.com"
+              },
+              {
+                "icon": "xLogo",
+                "label": "X",
+                "href": "https://x.com"
+              },
+              {
+                "icon": "youtube",
+                "label": "YouTube",
+                "href": "https://youtube.com"
+              },
+              {
+                "icon": "pinterest",
+                "label": "Pinterest",
+                "href": "https://pinterest.com"
+              }
+            ]
+          }
+        },
+        "About": {
+          "achievements": {
+            "eyebrow": "Our Achievements",
+            "titleFirst": "A Journey of",
+            "titleSecond": "Taste & Trust",
+            "description": "Over the years, we have served delicious food, created memorable dining experiences and earned the trust of our valued guests. These milestones inspire us to keep delivering great taste and warm hospitality every day.",
+            "items": [
+              {
+                "icon": "users",
+                "value": 150,
+                "suffix": "+",
+                "label": "Daily Guests Served"
+              },
+              {
+                "icon": "chefHat",
+                "value": 82,
+                "suffix": "+",
+                "label": "Special Dishes"
+              },
+              {
+                "icon": "forkKnife",
+                "value": 35,
+                "suffix": "+",
+                "label": "Expert Chefs"
+              },
+              {
+                "icon": "trophy",
+                "value": 10,
+                "suffix": "+",
+                "label": "Awards Won"
+              }
+            ]
+          },
+          "whyChoose": {
+            "features": [
+              {
+                "icon": "chefHat",
+                "title": "Delicious Food",
+                "text": "Fresh ingredients and expertly crafted recipes served with authentic flavours."
+              },
+              {
+                "icon": "cloche",
+                "title": "Warm Hospitality",
+                "text": "Our friendly staff ensures you feel welcome and cared for every time you visit."
+              },
+              {
+                "icon": "tableIcon",
+                "title": "Elegant Ambience",
+                "text": "A cozy and stylish environment perfect for family dining, celebrations and special moments."
+              },
+              {
+                "icon": "leaf",
+                "title": "Quality & Freshness",
+                "text": "We use high-quality ingredients to bring you the best taste in every bite."
+              }
+            ],
+            "eyebrow": "Why choose us",
+            "title": "More Than Just a Meal",
+            "highlight": "A Memorable Experience",
+            "description": "We are committed to serving delicious food, warm hospitality and a relaxing ambience. Every detail at our restaurant is designed to make your dining experience special and unforgettable.",
+            "menuLinkLabel": "Explore our menu",
+            "menuLinkIcon": "arrowRight"
+          }
+        }
+      }
+    }
+  }
+}

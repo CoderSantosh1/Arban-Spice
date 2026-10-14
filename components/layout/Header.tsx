@@ -4,15 +4,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
-import { nav, site } from "@/lib/data";
-import { ChevronDown, Clock, Close, Facebook, Instagram, MapPin, Menu, Phone, Twitter, Youtube } from "@/components/shared/Icons";
+import { assets, headerContent, nav, site } from "@/app/data";
+import { IconById } from "@/components/shared/IconById";
 
-const socials = [
-  { Icon: Facebook, label: "Facebook" },
-  { Icon: Instagram, label: "Instagram" },
-  { Icon: Twitter, label: "Twitter" },
-  { Icon: Youtube, label: "YouTube" },
-];
 
 function isActive(pathname: string, href: string, children?: { href: string }[]) {
   if (href === "/") return pathname === "/";
@@ -50,24 +44,24 @@ export default function Header() {
         <div className="container-x flex h-12 items-center justify-between">
           <div className="flex items-center divide-x divide-ink/30">
             <span className="flex items-center gap-2.5 pr-6">
-              <MapPin className="h-5 w-5" /> {site.address}
+              <IconById icon={headerContent.contactIcons.address} className="h-5 w-5" /> {site.address}
             </span>
             <a href={`tel:${site.phone.replace(/\s/g, "")}`} className="flex items-center gap-2.5 px-6 transition-colors hover:text-gold-dark">
-              <Phone className="h-5 w-5" /> {site.phone}
+              <IconById icon={headerContent.contactIcons.phone} className="h-5 w-5" /> {site.phone}
             </a>
             <span className="flex items-center gap-2.5 pl-6">
-              <Clock className="h-5 w-5" /> {site.hours}
+              <IconById icon={headerContent.contactIcons.hours} className="h-5 w-5" /> {site.hours}
             </span>
           </div>
           <div className="flex items-center gap-2 border-l border-ink/30 pl-6">
-            {socials.map(({ Icon, label }) => (
+            {headerContent.socials.map(({ icon, label, href }) => (
               <a
                 key={label}
-                href="#"
+                href={href ?? "#"}
                 aria-label={label}
                 className="grid h-8 w-8 place-items-center rounded-full bg-navy text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-gold"
               >
-                <Icon className="h-4 w-4" />
+                <IconById icon={icon} className="h-4 w-4" />
               </a>
             ))}
           </div>
@@ -79,10 +73,10 @@ export default function Header() {
         className={`sticky top-0 z-50 bg-navy transition-shadow duration-500 ${scrolled ? "shadow-[0_10px_30px_-10px_rgba(0,0,0,0.5)]" : ""}`}
       >
         <div className={`container-x flex items-center justify-between transition-[height] duration-500 ${scrolled ? "h-[66px]" : "h-[78px]"}`}>
-          <Link href="/" aria-label="ArbanSpice home" className="shrink-0">
+          <Link href="/" aria-label={headerContent.brandAriaLabel} className="shrink-0">
             <Image
-              src="/common/logo-light.png"
-              alt="ArbanSpice Restaurant"
+              src={assets.logo}
+              alt={headerContent.logoAlt}
               width={520}
               height={132}
               priority
@@ -90,7 +84,7 @@ export default function Header() {
             />
           </Link>
 
-          <nav className="hidden lg:block" aria-label="Main">
+          <nav className="hidden lg:block" aria-label={headerContent.navAriaLabel}>
             <ul className="flex items-center gap-11">
               {nav.map((item) => {
                 const active = isActive(pathname, item.href, item.children);
@@ -103,7 +97,7 @@ export default function Header() {
                       }`}
                     >
                       {item.label}
-                      {item.children && <ChevronDown className="h-3.5 w-3.5 transition-transform duration-300 group-hover/nav:rotate-180" />}
+                      {item.children && <IconById icon={headerContent.icons.dropdown} className="h-3.5 w-3.5 transition-transform duration-300 group-hover/nav:rotate-180" />}
                       <span
                         className={`absolute bottom-5 left-0 h-[2px] w-full origin-left bg-gold-2 transition-transform duration-500 ${
                           active ? "scale-x-100" : "scale-x-0 group-hover/nav:scale-x-100"
@@ -134,15 +128,15 @@ export default function Header() {
 
           <div className="flex items-center gap-3">
             <Link href="/book-table" className="btn-sand hidden sm:inline-flex">
-              Book a Table
+              {headerContent.bookTableLabel}
             </Link>
             <button
               type="button"
-              aria-label="Open menu"
+              aria-label={headerContent.openMenuLabel}
               onClick={() => setOpen(true)}
               className="grid h-11 w-11 place-items-center rounded border border-white/20 text-white transition-colors hover:border-gold-2 hover:text-gold-2 lg:hidden"
             >
-              <Menu className="h-6 w-6" />
+              <IconById icon={headerContent.icons.menu} className="h-6 w-6" />
             </button>
           </div>
         </div>
@@ -162,9 +156,9 @@ export default function Header() {
         aria-hidden={!open}
       >
         <div className="flex items-center justify-between border-b border-white/10 px-6 py-5">
-          <Image src="/common/logo-light.png" alt="ArbanSpice" width={520} height={132} className="h-10 w-auto" />
-          <button type="button" aria-label="Close menu" onClick={() => setOpen(false)} className="grid h-10 w-10 place-items-center rounded-full border border-white/20 transition-transform duration-500 hover:rotate-90">
-            <Close className="h-5 w-5" />
+          <Image src={assets.logo} alt={headerContent.logoAlt} width={520} height={132} className="h-10 w-auto" />
+          <button type="button" aria-label={headerContent.closeMenuLabel} onClick={() => setOpen(false)} className="grid h-10 w-10 place-items-center rounded-full border border-white/20 transition-transform duration-500 hover:rotate-90">
+            <IconById icon={headerContent.icons.close} className="h-5 w-5" />
           </button>
         </div>
         <ul className="flex-1 overflow-y-auto px-6 py-4">
@@ -182,8 +176,8 @@ export default function Header() {
                   {item.label}
                 </Link>
                 {item.children && (
-                  <button type="button" aria-label={`Toggle ${item.label}`} onClick={() => setSub(sub === item.label ? null : item.label)} className="p-2">
-                    <ChevronDown className={`h-5 w-5 transition-transform duration-300 ${sub === item.label ? "rotate-180" : ""}`} />
+                  <button type="button" aria-label={`${headerContent.submenuLabelPrefix}${item.label}`} onClick={() => setSub(sub === item.label ? null : item.label)} className="p-2">
+                    <IconById icon="chevronDown" className={`h-5 w-5 transition-transform duration-300 ${sub === item.label ? "rotate-180" : ""}`} />
                   </button>
                 )}
               </div>
@@ -205,9 +199,9 @@ export default function Header() {
           ))}
         </ul>
         <div className="space-y-3 border-t border-white/10 px-6 py-6 text-sm text-white/75">
-          <p className="flex items-center gap-3"><MapPin className="h-4 w-4 text-gold-2" /> {site.address}</p>
-          <p className="flex items-center gap-3"><Phone className="h-4 w-4 text-gold-2" /> {site.phone}</p>
-          <Link href="/book-table" className="btn-sand mt-3 w-full">Book a Table</Link>
+          <p className="flex items-center gap-3"><IconById icon={headerContent.contactIcons.address} className="h-4 w-4 text-gold-2" /> {site.address}</p>
+          <p className="flex items-center gap-3"><IconById icon={headerContent.contactIcons.phone} className="h-4 w-4 text-gold-2" /> {site.phone}</p>
+          <Link href="/book-table" className="btn-sand mt-3 w-full">{headerContent.bookTableLabel}</Link>
         </div>
       </aside>
     </>

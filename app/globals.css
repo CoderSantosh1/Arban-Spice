@@ -359,3 +359,11 @@ input.field[type="date"]::-webkit-calendar-picker-indicator {
   }
   [data-reveal] { opacity: 1; transform: none; filter: none; clip-path: none; }
 }
+
+/* Book-a-table hours band: soft "D" curve on the panel's right edge */
+@media (min-width: 1024px) {
+  .hours-panel {
+    border-radius: 16px 110px 110px 0 / 16px 50% 50% 0;
+    box-shadow: 10px 0 30px -12px rgba(255, 248, 238, 0.9);
+  }
+}
