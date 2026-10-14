@@ -14,8 +14,13 @@ export function PageBanner({ title, crumb }: { title: string; crumb?: string }) 
           <CrossMark className="hidden h-4 w-8 animate-[fadeIn_1s_1.2s_both] text-gold-2 sm:block" />
           <span aria-label={title}>
             {letters.map((ch, k) => (
-              <span key={k} aria-hidden className="letter" style={{ animationDelay: `${0.25 + k * 0.05}s` }}>
-                {ch === " " ? "Â " : ch}
+              <span
+                key={k}
+                aria-hidden
+                className="letter"
+                style={{ animationDelay: `${0.25 + k * 0.05}s` }}
+              >
+                {ch === " " ? "\u00A0" : ch}
               </span>
             ))}
           </span>
