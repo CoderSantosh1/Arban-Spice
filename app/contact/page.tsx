@@ -5,7 +5,7 @@ import { ContactForm } from "@/components/shared/Forms";
 import { IconById } from "@/components/shared/IconById";
 import Reveal from "@/components/shared/Reveal";
 import { PageBanner } from "@/components/shared/PageBanner";
-import { assets, contactPageContent, site } from "@/app/data";
+import { assets, contactPageContent, site } from "@/app/types";
 
 export const metadata: Metadata = { title: contactPageContent.title };
 

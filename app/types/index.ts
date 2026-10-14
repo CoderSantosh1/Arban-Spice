@@ -1,4 +1,4 @@
-import categoryJson from "./category.json";
+import categoryJson from "../data/category.json";
 import type { CategoryData, Dish } from "@/types";
 
 const data = categoryJson as unknown as CategoryData;

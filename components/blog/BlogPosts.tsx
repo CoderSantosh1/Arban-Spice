@@ -1,7 +1,7 @@
 ﻿"use client";
 
 import { useState } from "react";
-import { posts } from "@/app/data";
+import { posts } from "@/app/types";
 import { BlogCard } from "@/components/blog/BlogCard";
 import Reveal from "@/components/shared/Reveal";
 import Pagination from "@/components/shared/Pagination";

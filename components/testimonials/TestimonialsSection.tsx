@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Image from "next/image";
-import { assets, testimonialIntroContent, testimonials, uiText } from "@/app/data";
+import { assets, testimonialIntroContent, testimonials, uiText } from "@/app/types";
 import SectionHeading from "@/components/shared/SectionHeading";
 import { ChevronLeft, ChevronRight } from "@/components/shared/Icons";
 import { TestimonialCard } from "./TestimonialCard";

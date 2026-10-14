@@ -1,4 +1,4 @@
-import { homeChefs, homeCopy } from "@/app/data";
+import { homeChefs, homeCopy } from "@/app/types";
 import { LeafBranch, Script } from "@/components/shared/Decor";
 import Reveal from "@/components/shared/Reveal";
 import SectionHeading from "@/components/shared/SectionHeading";

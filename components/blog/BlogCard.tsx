@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { posts } from "@/app/data";
+import { posts } from "@/app/types";
 import { ArrowRight } from "@/components/shared/Icons";
 
 export function BlogCard({ date, cat, title, text, img }: (typeof posts)[number]) {

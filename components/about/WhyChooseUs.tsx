@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { LeafBranch } from "@/components/shared/Decor";
 import { IconById } from "@/components/shared/IconById";
-import { assets, whyChooseContent } from "@/app/data";
+import { assets, whyChooseContent } from "@/app/types";
 import Reveal from "@/components/shared/Reveal";
 
 

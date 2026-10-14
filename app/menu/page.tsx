@@ -5,7 +5,7 @@ import { IconById } from "@/components/shared/IconById";
 import Reveal from "@/components/shared/Reveal";
 import SectionHeading from "@/components/shared/SectionHeading";
 import { PageBanner } from "@/components/shared/PageBanner";
-import { assets, desserts, mainMenu, menuPageContent, seafood, specials } from "@/app/data";
+import { assets, desserts, mainMenu, menuPageContent, seafood, specials } from "@/app/types";
 import type { Dish } from "@/types";
 
 export const metadata: Metadata = { title: menuPageContent.title };

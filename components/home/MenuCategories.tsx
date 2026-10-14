@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { homeCopy, menuCategories } from "@/app/data";
+import { homeCopy, menuCategories } from "@/app/types";
 import { LeafBranch, Script } from "@/components/shared/Decor";
 import { ArrowRight } from "@/components/shared/Icons";
 import Reveal from "@/components/shared/Reveal";

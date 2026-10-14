@@ -1,6 +1,6 @@
 ﻿"use client";
 
-import { uiText } from "@/app/data";
+import { uiText } from "@/app/types";
 import { ChevronLeft, ChevronRight } from "./Icons";
 
 type PaginationProps = {

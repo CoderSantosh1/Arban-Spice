@@ -4,7 +4,7 @@ import Link from "next/link";
 import { Calendar, Check, ChevronRight, CrossedUtensils, Folder, Quote, Search, User } from "@/components/shared/Icons";
 import Reveal from "@/components/shared/Reveal";
 import { PageBanner } from "@/components/shared/PageBanner";
-import { assets, blogDetailContent, pageTitles } from "@/app/data";
+import { assets, blogDetailContent, pageTitles } from "@/app/types";
 
 export const metadata: Metadata = { title: pageTitles.blogDetail };
 

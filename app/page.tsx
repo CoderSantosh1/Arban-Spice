@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { assets, homeHeroContent } from "@/app/data";
+import { assets, homeHeroContent } from "@/app/types";
 import Link from "next/link";
 import { ArrowRight } from "@/components/shared/Icons";
 import { AboutIntro } from "@/components/about/AboutIntro";

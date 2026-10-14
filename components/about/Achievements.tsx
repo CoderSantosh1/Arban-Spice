@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Counter from "@/components/shared/Counter";
 import { IconById } from "@/components/shared/IconById";
-import { achievements, assets } from "@/app/data";
+import { achievements, assets } from "@/app/types";
 import Reveal from "@/components/shared/Reveal";
 
 

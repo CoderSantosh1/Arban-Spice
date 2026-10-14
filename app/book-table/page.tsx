@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { assets, bookingPageContent } from "@/app/data";
+import { assets, bookingPageContent } from "@/app/types";
 import Image from "next/image";
 import { LeafBranch } from "@/components/shared/Decor";
 import { BookingForm } from "@/components/shared/Forms";

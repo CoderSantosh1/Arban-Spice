@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { useCallback, useEffect, useState } from "react";
-import { gallery, galleryGridContent } from "@/app/data";
+import { gallery, galleryGridContent } from "@/app/types";
 import { IconById } from "./IconById";
 
 import Reveal from "./Reveal";

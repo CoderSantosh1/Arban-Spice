@@ -4,7 +4,7 @@
 import { useState } from "react";
 import Image from "next/image";
 
-import { assets, testimonials, testimonialPageContent, uiText } from "@/app/data";
+import { assets, testimonials, testimonialPageContent, uiText } from "@/app/types";
 import SectionHeading from "@/components/shared/SectionHeading";
 import { TestimonialCard } from "@/components/testimonials/TestimonialCard";
 const CARDS_PER_PAGE = 3;

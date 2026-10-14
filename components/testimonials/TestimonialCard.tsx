@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { testimonials } from "@/app/data";
+import { testimonials } from "@/app/types";
 import { Quote, Star } from "@/components/shared/Icons";
 
 export function TestimonialCard({

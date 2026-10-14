@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { pageTitles } from "@/app/data";
+import { pageTitles } from "@/app/types";
 import { AboutIntro } from "@/components/about/AboutIntro";
 import { Achievements } from "@/components/about/Achievements";
 import { WhyChooseUs } from "@/components/about/WhyChooseUs";

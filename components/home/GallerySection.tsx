@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { gallery, homeCopy } from "@/app/data";
+import { gallery, homeCopy } from "@/app/types";
 import Carousel from "@/components/shared/Carousel";
 import { LeafBranch, Script } from "@/components/shared/Decor";
 import Reveal from "@/components/shared/Reveal";

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { pageTitles } from "@/app/data";
+import { pageTitles } from "@/app/types";
 import { LeafBranch, Script } from "@/components/shared/Decor";
 import { BlogIntro } from "@/components/blog/BlogIntro";
 import BlogPosts from "@/components/blog/BlogPosts";

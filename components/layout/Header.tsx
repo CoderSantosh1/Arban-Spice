@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
-import { assets, headerContent, nav, site } from "@/app/data";
+import { assets, headerContent, nav, site } from "@/app/types";
 import { IconById } from "@/components/shared/IconById";
 
 

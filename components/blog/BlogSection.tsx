@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { posts } from "@/app/data";
+import { posts } from "@/app/types";
 import { LeafBranch, Script } from "@/components/shared/Decor";
 import { ArrowRight } from "@/components/shared/Icons";
 import Reveal from "@/components/shared/Reveal";

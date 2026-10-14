@@ -3,7 +3,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import { assets, chefs, chefsPageContent, uiText } from "@/app/data";
+import { assets, chefs, chefsPageContent, uiText } from "@/app/types";
 import { LeafBranch } from "@/components/shared/Decor";
 import Reveal from "@/components/shared/Reveal";
 import SectionHeading from "@/components/shared/SectionHeading";

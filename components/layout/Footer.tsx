@@ -2,7 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import { assets, footerContent, openingHours, site } from "@/app/data";
+import { assets, footerContent, openingHours, site } from "@/app/types";
 import { IconById } from "@/components/shared/IconById";
 import Reveal from "@/components/shared/Reveal";
 

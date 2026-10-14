@@ -1,7 +1,7 @@
 ﻿import Image from "next/image";
 import Link from "next/link";
 import { CrossMark } from "@/components/shared/Decor";
-import { assets, uiText } from "@/app/data";
+import { assets, uiText } from "@/app/types";
 
 export function PageBanner({ title, crumb }: { title: string; crumb?: string }) {
   const letters = title.split("");

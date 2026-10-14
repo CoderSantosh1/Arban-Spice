@@ -2,7 +2,7 @@
 
 import { useState, type FormEvent, type ReactNode } from "react";
 
-import { formContent } from "@/app/data";
+import { formContent } from "@/app/types";
 import { IconById } from "./IconById";
 
 function Success({ booking, onReset }: { booking: boolean; onReset: () => void }) {

@@ -1,5 +1,5 @@
 import SectionHeading from "@/components/shared/SectionHeading";
-import { blogIntroContent } from "@/app/data";
+import { blogIntroContent } from "@/app/types";
 
 export function BlogIntro() {
   return (

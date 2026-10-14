@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { galleryPageContent } from "@/app/data";
+import { galleryPageContent } from "@/app/types";
 import { LeafBranch, Script } from "@/components/shared/Decor";
 import GalleryGrid from "@/components/shared/GalleryGrid";
 import SectionHeading from "@/components/shared/SectionHeading";

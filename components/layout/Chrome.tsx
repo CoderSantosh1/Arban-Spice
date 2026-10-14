@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { assets, uiText } from "@/app/data";
+import { assets, uiText } from "@/app/types";
 import { useEffect, useState } from "react";
 import { ArrowUp } from "@/components/shared/Icons";
 
